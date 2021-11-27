@@ -1,0 +1,37 @@
+This is a content based movie recommendation system (Based on tags)
+
+
+
+we will form tags 
+
+
+the data in tags will be converted into vectors, This is the concept of Vectorization
+
+we will not use/consider STOP WORDS in vectorization
+
+
+if a user like a movie of particular vector, our model will suggest the closest 5 vectors to the user
+
+there are different ways to convery the words to vectors, they are 
+1. Bag of Words
+2. TfIdf
+3. Word2Vec
+
+the simplest is 'bag of words' in bag of words we will form a set of top 5000 most repeated words, 
+and we will(Our model) check for the same word in each movie and develop a VECTOR in the form of an array 
+if a user like a movie, OUR MODEL will SUGGEST the nearest 5 VECTORS(MOVIES)
+
+we will use sklearn.feature_extraction.text.CountVectorizer
+
+
+
+there will be lot of similat words [lovely, love, lover, loves] 
+we have to apply STEMMING using the library '"nltk" to convert them into [love, love, love, love]
+
+
+
+as the data is larger we cannot use EUCLIDIAN DISTACE to calcutalt the distance between the vectors 
+(because for higher dimension 'EUCLIDIAN DISTACE' wi not be appropriate)
+
+
+usually for higher dimension we will use cosine distance, for that we will use cosine similarity from SK learn
