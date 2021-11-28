@@ -20,7 +20,7 @@ there are different ways to convery the words to vectors, they are
 3. Word2Vec
 
 the simplest is 'bag of words' in bag of words we will form a set of top 5000 most repeated words, 
-and we will(Our model) check for the same word in each movie and develop a VECTOR in the form of an array 
+and we will(Our model) check for the same word in each movie and develop a VECTOR in the form of an array and sort them in descending order
 if a user like a movie, OUR MODEL will SUGGEST the nearest 5 VECTORS(MOVIES)
 
 we will use sklearn.feature_extraction.text.CountVectorizer
