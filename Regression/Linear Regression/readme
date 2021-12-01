@@ -1,1 +1,13 @@
+Linear Regression
+
+In Regression, we plot a graph between the variables which best fit the given data points. 
+Linear regression shows the linear relationship between the independent variable (X-axis) and the dependent variable (Y-axis).
+To calculate best-fit line linear regression uses a traditional slope-intercept form. 
+A regression line can be a Positive Linear Relationship or a Negative Linear Relationship.
+
+
+ The goal of the linear regression algorithm is to get the best values for a0 and a1 to find the best fit line and the best fit line should have the least error. 
+ In Linear Regression, Mean Squared Error (MSE) cost function is used, which helps to figure out the best possible values for a0 and a1, which provides the best fit line for the data points. 
+ Using the MSE function, we will change the values of a0 and a1 such that the MSE value settles at the minima. Gradient descent is a method of updating a0 and a1 to minimize the cost function (MSE)
+
 
