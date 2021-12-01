@@ -1,5 +1,7 @@
 Linear Regression
 
+y = mx+b
+
 In Regression, we plot a graph between the variables which best fit the given data points. 
 Linear regression shows the linear relationship between the independent variable (X-axis) and the dependent variable (Y-axis).
 To calculate best-fit line linear regression uses a traditional slope-intercept form. 
