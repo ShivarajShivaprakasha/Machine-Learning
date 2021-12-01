@@ -1,1 +1,95 @@
 Support Vector Regression
+
+https://www.analyticsvidhya.com/blog/2020/03/support-vector-regression-tutorial-for-machine-learning/
+
+
+Hyperparameters of the Support Vector Machine (SVM) Algorithm
+
+There are a few important parameters of SVM that you should be aware of before proceeding further:
+
+Kernel: A kernel helps us find a hyperplane in the higher dimensional space without increasing the computational cost. Usually, the computational cost will increase if the dimension of the data increases. This increase in dimension is required when we are unable to find a separating hyperplane in a given dimension and are required to move in a higher dimension:
+Support Vector Machine parameters
+
+Hyperplane: This is basically a separating line between two data classes in SVM. But in Support Vector Regression, this is the line that will be used to predict the continuous output
+Decision Boundary: A decision boundary can be thought of as a demarcation line (for simplification) on one side of which lie positive examples and on the other side lie the negative examples. On this very line, the examples may be classified as either positive or negative. This same concept of SVM will be applied in Support Vector Regression as well
+
+
+Unlocking a New World with the Support Vector Regression Algorithm
+Support Vector Machines (SVM) are popularly and widely used for classification problems in machine learning. I’ve often relied on this not just in machine learning projects but when I want a quick result in a hackathon.
+
+But SVM for regression analysis? I hadn’t even considered the possibility for a while! And even now when I bring up “Support Vector Regression” in front of machine learning beginners, I often get a bemused expression. I understand – most courses and experts don’t even mention Support Vector Regression (SVR) as a machine learning algorithm.
+
+Support-Vector-Regression
+
+But SVR has its uses as you’ll see in this tutorial. We will first quickly understand what SVM is, before diving into the world of Support Vector Regression and how to implement it in Python!
+
+###What is a Support Vector Machine (SVM)?
+So what exactly is Support Vector Machine (SVM)? We’ll start by understanding SVM in simple terms. Let’s say we have a plot of two label classes as shown in the figure below:
+
+
+
+Can you decide what the separating line will be? You might have come up with this:
+
+
+
+The line fairly separates the classes. This is what SVM essentially does – simple class separation. Now, what is the data was like this:
+
+
+
+Here, we don’t have a simple line separating these two classes. So we’ll extend our dimension and introduce a new dimension along the z-axis. We can now separate these two classes:
+
+
+
+When we transform this line back to the original plane, it maps to the circular boundary as I’ve shown here:
+
+
+
+This is exactly what SVM does! It tries to find a line/hyperplane (in multidimensional space) that separates these two classes. Then it classifies the new point depending on whether it lies on the positive or negative side of the hyperplane depending on the classes to predict.
+
+ 
+
+Hyperparameters of the Support Vector Machine (SVM) Algorithm
+There are a few important parameters of SVM that you should be aware of before proceeding further:
+
+Kernel: A kernel helps us find a hyperplane in the higher dimensional space without increasing the computational cost. Usually, the computational cost will increase if the dimension of the data increases. This increase in dimension is required when we are unable to find a separating hyperplane in a given dimension and are required to move in a higher dimension:
+Support Vector Machine parameters
+
+Hyperplane: This is basically a separating line between two data classes in SVM. But in Support Vector Regression, this is the line that will be used to predict the continuous output
+Decision Boundary: A decision boundary can be thought of as a demarcation line (for simplification) on one side of which lie positive examples and on the other side lie the negative examples. On this very line, the examples may be classified as either positive or negative. This same concept of SVM will be applied in Support Vector Regression as well
+To understand SVM from scratch, I recommend this tutorial: Understanding Support Vector Machine(SVM) algorithm from examples.
+
+ 
+
+##Introduction to Support Vector Regression (SVR)
+
+Support Vector Regression (SVR) uses the same principle as SVM, but for regression problems. Let’s spend a few minutes understanding the idea behind SVR.
+
+ 
+
+##The Idea Behind Support Vector Regression
+The problem of regression is to find a function that approximates mapping from an input domain to real numbers on the basis of a training sample. So let’s now dive deep and understand how SVR works actually.
+
+##Support Vector Regression
+
+Consider these two red lines as the decision boundary and the green line as the hyperplane. Our objective, when we are moving on with SVR, is to basically consider the points that are within the decision boundary line. Our best fit line is the hyperplane that has a maximum number of points.
+
+The first thing that we’ll understand is what is the decision boundary (the danger red line above!). Consider these lines as being at any distance, say ‘a’, from the hyperplane. So, these are the lines that we draw at distance ‘+a’ and ‘-a’ from the hyperplane. This ‘a’ in the text is basically referred to as epsilon.
+
+Assuming that the equation of the hyperplane is as follows:
+
+Y = wx+b (equation of hyperplane)
+Then the equations of decision boundary become:
+
+wx+b= +a
+
+wx+b= -a
+
+Thus, any hyperplane that satisfies our SVR should satisfy:
+
+-a < Y- wx+b < +a 
+
+Our main aim here is to decide a decision boundary at ‘a’ distance from the original hyperplane such that data points closest to the hyperplane or the support vectors are within that boundary line.
+
+Hence, we are going to take only those points that are within the decision boundary and have the least error rate, or are within the Margin of Tolerance. This gives us a better fitting model.
+
+ 
