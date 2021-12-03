@@ -2,7 +2,6 @@ Support Vector Regression
 
 https://www.analyticsvidhya.com/blog/2020/03/support-vector-regression-tutorial-for-machine-learning/
 
-
 Hyperparameters of the Support Vector Machine (SVM) Algorithm
 
 There are a few important parameters of SVM that you should be aware of before proceeding further:
@@ -12,7 +11,6 @@ Support Vector Machine parameters
 
 Hyperplane: This is basically a separating line between two data classes in SVM. But in Support Vector Regression, this is the line that will be used to predict the continuous output
 Decision Boundary: A decision boundary can be thought of as a demarcation line (for simplification) on one side of which lie positive examples and on the other side lie the negative examples. On this very line, the examples may be classified as either positive or negative. This same concept of SVM will be applied in Support Vector Regression as well
-
 
 Unlocking a New World with the Support Vector Regression Algorithm
 Support Vector Machines (SVM) are popularly and widely used for classification problems in machine learning. I’ve often relied on this not just in machine learning projects but when I want a quick result in a hackathon.
@@ -36,7 +34,6 @@ When we transform this line back to the original plane, it maps to the circular 
 
 This is exactly what SVM does! It tries to find a line/hyperplane (in multidimensional space) that separates these two classes. Then it classifies the new point depending on whether it lies on the positive or negative side of the hyperplane depending on the classes to predict.
  
-
 Hyperparameters of the Support Vector Machine (SVM) Algorithm
 There are a few important parameters of SVM that you should be aware of before proceeding further:
 
@@ -51,8 +48,6 @@ To understand SVM from scratch, I recommend this tutorial: Understanding Support
 ##Introduction to Support Vector Regression (SVR)
 
 Support Vector Regression (SVR) uses the same principle as SVM, but for regression problems. Let’s spend a few minutes understanding the idea behind SVR.
-
- 
 
 ##The Idea Behind Support Vector Regression
 The problem of regression is to find a function that approximates mapping from an input domain to real numbers on the basis of a training sample. So let’s now dive deep and understand how SVR works actually.
@@ -79,5 +74,3 @@ Thus, any hyperplane that satisfies our SVR should satisfy:
 Our main aim here is to decide a decision boundary at ‘a’ distance from the original hyperplane such that data points closest to the hyperplane or the support vectors are within that boundary line.
 
 Hence, we are going to take only those points that are within the decision boundary and have the least error rate, or are within the Margin of Tolerance. This gives us a better fitting model.
-
- 
