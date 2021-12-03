@@ -19,33 +19,22 @@ Support Vector Machines (SVM) are popularly and widely used for classification p
 
 But SVM for regression analysis? I hadn’t even considered the possibility for a while! And even now when I bring up “Support Vector Regression” in front of machine learning beginners, I often get a bemused expression. I understand – most courses and experts don’t even mention Support Vector Regression (SVR) as a machine learning algorithm.
 
-Support-Vector-Regression
+###Support-Vector-Regression
 
 But SVR has its uses as you’ll see in this tutorial. We will first quickly understand what SVM is, before diving into the world of Support Vector Regression and how to implement it in Python!
 
 ###What is a Support Vector Machine (SVM)?
 So what exactly is Support Vector Machine (SVM)? We’ll start by understanding SVM in simple terms. Let’s say we have a plot of two label classes as shown in the figure below:
 
-
-
 Can you decide what the separating line will be? You might have come up with this:
-
-
 
 The line fairly separates the classes. This is what SVM essentially does – simple class separation. Now, what is the data was like this:
 
-
-
 Here, we don’t have a simple line separating these two classes. So we’ll extend our dimension and introduce a new dimension along the z-axis. We can now separate these two classes:
-
-
 
 When we transform this line back to the original plane, it maps to the circular boundary as I’ve shown here:
 
-
-
 This is exactly what SVM does! It tries to find a line/hyperplane (in multidimensional space) that separates these two classes. Then it classifies the new point depending on whether it lies on the positive or negative side of the hyperplane depending on the classes to predict.
-
  
 
 Hyperparameters of the Support Vector Machine (SVM) Algorithm
@@ -59,7 +48,6 @@ Decision Boundary: A decision boundary can be thought of as a demarcation line (
 To understand SVM from scratch, I recommend this tutorial: Understanding Support Vector Machine(SVM) algorithm from examples.
 
  
-
 ##Introduction to Support Vector Regression (SVR)
 
 Support Vector Regression (SVR) uses the same principle as SVM, but for regression problems. Let’s spend a few minutes understanding the idea behind SVR.
