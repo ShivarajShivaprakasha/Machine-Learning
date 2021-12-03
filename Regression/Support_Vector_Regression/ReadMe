@@ -44,7 +44,6 @@ Hyperplane: This is basically a separating line between two data classes in SVM.
 Decision Boundary: A decision boundary can be thought of as a demarcation line (for simplification) on one side of which lie positive examples and on the other side lie the negative examples. On this very line, the examples may be classified as either positive or negative. This same concept of SVM will be applied in Support Vector Regression as well
 To understand SVM from scratch, I recommend this tutorial: Understanding Support Vector Machine(SVM) algorithm from examples.
 
- 
 ##Introduction to Support Vector Regression (SVR)
 
 Support Vector Regression (SVR) uses the same principle as SVM, but for regression problems. Let’s spend a few minutes understanding the idea behind SVR.
