@@ -2,13 +2,11 @@ DATASET LINK https://www.kaggle.com/tmdb/tmdb-movie-metadata?select=tmdb_5000_mo
 
 This is a content based movie recommendation system (Based on tags)
 
-
 we will form tags 
 
 the data in tags will be converted into vectors, This is the concept of Vectorization
 
 we will not use/consider STOP WORDS in vectorization
-
 
 if a user like a movie of particular vector, our model will suggest the closest 5 vectors to the user
 
@@ -28,10 +26,7 @@ we will use sklearn.feature_extraction.text.CountVectorizer
 there will be lot of similat words [lovely, love, lover, loves] 
 we have to apply STEMMING using the library '"nltk" to convert them into [love, love, love, love]
 
-
-
 as the data is larger we cannot use EUCLIDIAN DISTACE to calcutalt the distance between the vectors 
 (because for higher dimension 'EUCLIDIAN DISTACE' wi not be appropriate)
-
 
 usually for higher dimension we will use cosine distance, for that we will use cosine similarity from SK learn
