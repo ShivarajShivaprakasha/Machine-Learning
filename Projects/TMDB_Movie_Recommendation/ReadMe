@@ -21,8 +21,6 @@ if a user like a movie, OUR MODEL will SUGGEST the nearest 5 VECTORS(MOVIES)
 
 we will use sklearn.feature_extraction.text.CountVectorizer
 
-
-
 there will be lot of similat words [lovely, love, lover, loves] 
 we have to apply STEMMING using the library '"nltk" to convert them into [love, love, love, love]
 
